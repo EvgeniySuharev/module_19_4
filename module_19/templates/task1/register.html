@@ -1,0 +1,68 @@
+{% extends 'task1/menu.html' %}
+{% block pagename %}
+<h1>Регистрация</h1>
+{% endblock %}
+{% block content %}
+<h3>{{ error }}</h3>
+<form method="post">
+    {% csrf_token %}
+    <label for="login">Введите имя</label>
+    <input type="text" id="login" name="login" maxlength="30" required>
+
+    <label for="password">Введите пароль</label>
+    <input type="text" id="password" name="password" minlength="8" required>
+
+    <label for="password_rep">Повторите пароль</label>
+    <input type="text" id="password_rep" name="password_rep" minlength="8" required>
+
+    <label for="age">Введите возраст</label>
+    <input type="number" id="age" name="age" maxlength="3" required>
+
+    <button type="submit">Зарегистрировать</button>
+</form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h3>{{ error }}</h3>-->
+<!--<form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    <label for="login">Введите имя</label>-->
+<!--    <input type="text" id="login" name="login" maxlength="30" required>-->
+
+<!--    <label for="password">Введите пароль</label>-->
+<!--    <input type="text" id="password" name="password" minlength="8" required>-->
+
+<!--    <label for="password_rep">Повторите пароль</label>-->
+<!--    <input type="text" id="password_rep" name="password_rep" minlength="8" required>-->
+
+<!--    <label for="age">Введите возраст</label>-->
+<!--    <input type="number" id="age" name="age" maxlength="3" required>-->
+
+<!--    <button type="submit">Зарегистрировать</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
